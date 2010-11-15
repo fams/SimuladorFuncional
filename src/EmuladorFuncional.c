@@ -14,10 +14,10 @@
 #include <unistd.h>
 #include <ctype.h>
 
-#define vp if(verboseFlag)
 
 #include "data.h"
 #include "execute.h"
+#include "util.h"
 
 // Global Data
 char *memory[MEMSIZE];

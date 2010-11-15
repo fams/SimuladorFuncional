@@ -25,17 +25,20 @@ extern int PC;
 //Codigo do programa
 extern char *code[NUMLINES];
 //Registrador de instrucao
-extern char RI[32];
+//extern char RI[32];
 //Registrador
-struct RI {
-	char *inst;
+/*extern struct{
+	char inst[32];
 	int A;
 	int B;
+	int Ext;
 	int W;
-};
+} RI;
+*/
 /*
  * ALU
  */
+
 struct ULA {
 	int A;
 	int B;
