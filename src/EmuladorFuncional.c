@@ -118,7 +118,7 @@ int loadData(char *datafile){
 		while (fgets(buf, 4, fp) != NULL)
 		{
 		    data = (int)strtol(buf,NULL,16);
-		    memory[line] = data;
+		    memint[line] = data;
 		    printf("Lendo %i \n", data);
 		    line++;
 		}

@@ -24,7 +24,23 @@ extern int  *regbank[8];
 extern int PC;
 //Codigo do programa
 extern char *code[NUMLINES];
-
+//Registrador de instrucao
+extern char RI[32];
+//Registrador
+struct RI {
+	char *inst;
+	int A;
+	int B;
+	int W;
+};
 /*
  * ALU
  */
+struct ULA {
+	int A;
+	int B;
+	int Saida;
+	int OP;
+} ;
+
+
